@@ -102,6 +102,11 @@ def __render_response(template_file: str, response_val: dict, request: Request, 
     if isinstance(response_val, fastapi.Response):
         return response_val
 
+    # bypass jinja if request is not html or htmx
+    accept = request.headers["accept"].split(",")[0]
+    if accept != "text/html" or not request.headers.get('Hx-Request'):
+        return response_val
+        
     model = dict(response_val)
     # Allow override from response
     model.setdefault('media_type', mimetype)
