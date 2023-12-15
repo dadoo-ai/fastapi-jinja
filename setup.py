@@ -22,7 +22,7 @@ with open(requirements_txt, "r", encoding="utf-8") as fin:
     ]
 
 setup(
-    name="fastapi-jinja",
+    name="fastapi-jinja-fork",
     version="0.1.0",
     url="https://github.com/dadoo-ai/fastapi-jinja-fork",
     license="MIT",
