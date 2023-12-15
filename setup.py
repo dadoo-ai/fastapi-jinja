@@ -24,7 +24,7 @@ with open(requirements_txt, "r", encoding="utf-8") as fin:
 setup(
     name="fastapi-jinja",
     version="0.1.0",
-    url="https://github.com/ageekinside/fastapi-jinja",
+    url="https://github.com/ageekinside/fastapi-jinja-fork",
     license="MIT",
     author="Marc Brooks",
     author_email="marcwbrooks@gmail.com",
